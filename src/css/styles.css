@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.select-category {
+  width: 150px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.button {
+  padding: 10px 15px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #218838;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: 30%;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.task p {
+  margin: 5px 0;
+}
+
+.task button {
+  margin-top: 10px;
+}
+
+.task input[type="text"] {
+  width: 200px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.task:hover {
+  box-shadow: 0px 0px 10px #888888;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-task-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-task-form form {
+  width: calc(100% - 120px);
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.category-indicators {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.category-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.ux {
+  background-color: #ffecb3;
+}
+
+.dev-frontend {
+  background-color: #c8e6c9;
+}
+
+.dev-backend {
+  background-color: #b3e5fc;
+}
+
+.category-indicator span {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .task input[type="text"] {
+    width: 150px;
+  }
+
+  .app h1 {
+    font-size: 24px;
+  }
+
+  .add-task-form form {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  input[type="text"],
+  .select-category,
+  .button {
+    width: calc(100% - 20px);
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.task.ux {
+  background-color: #ffecb3;
+}
+
+.task.dev-frontend {
+  background-color: #c8e6c9;
+}
+
+.task.dev-backend {
+  background-color: #b3e5fc;
+}
